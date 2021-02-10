@@ -5,6 +5,11 @@
 #### Users can search for a city and see the current weather data for that day. 
 #### This is the 'lite' version of the full weather app dashboard. Full weather app dashboard will have functionality for five day forecast, as well as saving previous search data. 
 
+
+![Screen Shot 2020-12-10 at 18 24 25](https://user-images.githubusercontent.com/72999798/107537486-e8cace80-6b90-11eb-92bd-0e47facda452.png)
+
+[View the deployed application here]( https://tonipow3ll.github.io/Weather-App-Lite/)
+
 # Credits
 #### Google Fonts was used for all fonts
 #### Pexel was used for the background photo
