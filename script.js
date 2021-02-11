@@ -22,18 +22,16 @@ function setQuery(event){
     console.log(searchBox.value)
   }
 }
-
+// function for getting location
 function getLocation() {
-  // Make sure browser supports this feature
   if (navigator.geolocation) {
-    // Provide our showPosition() function to getCurrentPosition
     navigator.geolocation.getCurrentPosition(showPosition);
   } 
   else {
     alert("Geolocation is not supported by this browser.");
   }
 }
-
+// takes about 20-30 seconds to load.. refactor this. 
 function showPosition(position) {
   // Grab coordinates from the given object
   const lat = position.coords.latitude;
