@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+  getLocation();
 // 
 const api = {
    key: "49f44633a22b64ed242a4f937e6ef855",
@@ -19,6 +21,32 @@ function setQuery(event){
     getResults(searchBox.value)
     console.log(searchBox.value)
   }
+}
+
+function getLocation() {
+  // Make sure browser supports this feature
+  if (navigator.geolocation) {
+    // Provide our showPosition() function to getCurrentPosition
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } 
+  else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  // Grab coordinates from the given object
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+
+  redirect(lat, lon);
+}
+
+function redirect(lat, lon) {
+  fetch(`${api.base}weather?lat=${lat}&lon=${lon}&units=imperial&APPID=${api.key}`)
+  .then (weather => {
+    return weather.json();
+  }).then(displayResults)
 }
 
 function getResults(query){
