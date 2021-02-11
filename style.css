@@ -48,6 +48,7 @@ header input:focus {
 }
 
 main{
+    font-weight: bolder;
     width: 280px;
     flex: 1 1 100%;
     padding: 25px 25px 50px;
