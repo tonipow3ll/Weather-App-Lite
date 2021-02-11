@@ -33,7 +33,6 @@ function getLocation() {
 }
 // takes about 20-30 seconds to load.. refactor this. 
 function showPosition(position) {
-  // Grab coordinates from the given object
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
   redirect(lat, lon);
@@ -64,9 +63,9 @@ function displayResults(weather){
     let weather_el = document.querySelector('.current .weather')
     weather_el.innerText = weather.weather[0].main;
 
-    // let icon = `${weather.weather[0].icon}`
-    // let iconImg = document.querySelector('.icon')
-    // iconImg.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png"></img>`
+    let icon = `${weather.weather[0].icon}`
+    let iconImg = document.querySelector('.icon')
+    iconImg.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png"></img>`
 
     let hilow = document.querySelector('.hi-low')
     hilow.innerText = ` ${Math.round(weather.main.temp_min)}°F /  ${Math.round(weather.main.temp_max)}°F `;

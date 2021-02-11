@@ -48,12 +48,16 @@ header input:focus {
 }
 
 main{
+    width: 280px;
     flex: 1 1 100%;
     padding: 25px 25px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    align-self: center;
+    max-height: 30rem;
 }
 
 .location .city{
@@ -67,9 +71,6 @@ main{
     color: #fff;
     font-size: 16px;
 }
-/* .icon{
-    background-color: rgba(255, 255, 255, 0.3);
-} */
 
 .current .temp{
     color: #fff;
