@@ -2,11 +2,12 @@
 
 #### Check the current weather forecast!
 
-#### Users can search for a city and see the current weather data for that day. 
+#### Users can search for a city and see the current weather data for that day.
+#### Alternatively if a user has location services turned on the application will display the weather based on their current location.  
 #### This is the 'lite' version of the full weather app dashboard. Full weather app dashboard will have functionality for five day forecast, as well as saving previous search data. 
 
 
-![Screen Shot 2020-12-10 at 18 24 25](https://user-images.githubusercontent.com/72999798/107537486-e8cace80-6b90-11eb-92bd-0e47facda452.png)
+![Screen Shot 2020-12-10 at 18 24 25](https://user-images.githubusercontent.com/72999798/107670731-08312c80-6c61-11eb-9647-675509a1b9b0.png)
 
 [View the deployed application here]( https://tonipow3ll.github.io/Weather-App-Lite/)
 
